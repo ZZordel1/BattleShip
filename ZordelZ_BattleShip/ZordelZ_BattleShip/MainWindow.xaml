@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZordelZ_BattleShip"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainMenu" Height="350" Width="525">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="Images\battleshipbg.jpg"
+                        Stretch="UniformToFill"/>
+        </StackPanel.Background>
+
+        <Label Content="BATTLESHIP"
+               FontSize="70"
+               FontWeight="Medium"
+               Margin="50 50 50 20"
+               HorizontalAlignment="Center"/>
+        <Button x:Name="NewGame"
+                Content="New Game"
+                FontSize="24"
+                FontWeight="Medium"
+                Margin="10"
+                Width="200"
+                Click="NewGame_Click"/>
+        <Button x:Name="LoadGame"
+                Content="Load Game"
+                FontSize="24"
+                FontWeight="Medium"
+                Margin="10"
+                Width="200"
+                Click="LoadGame_Click"/>
+    </StackPanel>
 </Window>

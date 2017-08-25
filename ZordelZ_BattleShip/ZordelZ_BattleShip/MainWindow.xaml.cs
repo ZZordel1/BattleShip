@@ -24,5 +24,17 @@ namespace ZordelZ_BattleShip
         {
             InitializeComponent();
         }
+
+        private void NewGame_Click(object sender, RoutedEventArgs e)
+        {
+            GameWindow gw = new GameWindow();
+            this.Close();
+            gw.Show();
+        }
+
+        private void LoadGame_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
