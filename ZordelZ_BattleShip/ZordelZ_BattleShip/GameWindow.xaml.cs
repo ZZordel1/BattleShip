@@ -57,8 +57,8 @@ namespace ZordelZ_BattleShip
                     {
                         cell[i, j] = new Cell();
                         Rectangle rec = new Rectangle();
-                        rec.Width = 35;
-                        rec.Height = 35;
+                        rec.Width = 50;
+                        rec.Height = 50;
                         rec.DataContext = cell[i, j];
                         rec.MouseLeftButtonDown += cell[i, j].Clicked;
                         Binding cellState = new Binding("State");
@@ -70,6 +70,11 @@ namespace ZordelZ_BattleShip
                     }
                 }
             }
+        }
+
+        private void isHorizontal_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

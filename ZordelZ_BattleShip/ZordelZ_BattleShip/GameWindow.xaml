@@ -17,7 +17,9 @@
             <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Background="LightGray">
+        <StackPanel  Grid.Column="0" Background="LightGray">
+            <!--<Label Content="       1         2         3         4         5         6         7         8         9"
+                   FontSize="20"/>-->
             <UniformGrid
                  Rows="10"
                  Columns="10"
@@ -25,9 +27,8 @@
                  Height="650" 
                  HorizontalAlignment="Left" 
                  Margin="10 10 10 10" 
-                 Name="Board"
-                 VerticalAlignment="Top">
-            </UniformGrid>
+                 x:Name="Board"
+                 VerticalAlignment="Top"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <Menu FontSize="16">
@@ -38,6 +39,11 @@
                           Command="Save"/>
                 </MenuItem>
             </Menu>
+            <CheckBox x:Name="isHorizontal"
+                    Content="Horizontal"
+                      FontSize="20"
+                      HorizontalAlignment="Center"
+                      Margin="20" Checked="isHorizontal_Checked"/>
         </StackPanel>
 
     </Grid>
